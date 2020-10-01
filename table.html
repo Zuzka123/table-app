@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="table.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <section class="jumbotron">
+
+        <nav class="justify-content-center d-flex align-items-center">
+            <button class="btn btn-primary ml-4 btn-lg buttons" type="button">PRIDAŤ</button>
+            <button class="btn btn-primary ml-4 btn-lg buttons" type="button">UPRAVIŤ</button>
+            <button class="btn btn-primary ml-4 btn-lg buttons" type="button">EXPORT</button>
+            <button class="btn btn-primary ml-4 btn-lg buttons" type="button">NASTAVENIA</button>
+            <button class="btn btn-primary ml-4 btn-lg buttons" type="button">FILTER</button>
+        </nav>
+    </section>
+
+    <section>
+        <div class="container jumbotron">
+            <div class="table-shadow">
+                <div class="bg-light">
+
+                    <div class="input-group p-3 input-group input-group-lg">
+                        <input id="search-input" type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append">
+                            <a id="search"
+                                class="input-group-text d-flex justify-content-center border border-primary bg-primary">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end p-3">
+                        <a id="delete" class="bg-light mr-2"><i
+                                class="far fa-trash-alt d-flex justify-content-center"></i></a>
+                        <a id="edit1" class="bg-light mr-2"><i
+                                class="fas fa-pen-alt d-flex justify-content-center"></i></a>
+                        <a id="add" class="bg-light mr-2"><i class="fas fa-plus d-flex justify-content-center"></i></a>
+                    </div>
+                </div>
+
+                <div class="table-responsive mt-3 tableBorder">
+                    <table class="table table-hover">
+                        <thead class="bg-primary border-0">
+                            <tr>
+                                <th>UID</th>
+                                <th>Meno</th>
+                                <th>Priezvisko</th>
+                                <th>Funkcia</th>
+                                <th>Funkcia pridaná</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-light ">
+                            <tr>
+                                <td>SK00001</td>
+                                <td>Andrej</td>
+                                <td>Kiska</td>
+                                <td>ex-prezident</td>
+                                <td>1.2.2021</td>
+                            </tr>
+                            <tr>
+                                <td>SK00002</td>
+                                <td>Štefan</td>
+                                <td>Rozkopál</td>
+                                <td>vedúci kancelárie</td>
+                                <td>1.2.2021</td>
+                            </tr>
+                            <tr>
+                                <td>SK00003</td>
+                                <td>Vladimír</td>
+                                <td>Šimko</td>
+                                <td>Vojenská kancelária prezidenta</td>
+                                <td>1.2.2021</td>
+                            </tr>
+                            <tr>
+                                <td>SK00007</td>
+                                <td>Lucia</td>
+                                <td>Ďuriš Nicholsonová</td>
+                                <td>ex-poslanec</td>
+                                <td>1.2.2021</td>
+                            </tr>
+                            <tr>
+                                <td>SK00009</td>
+                                <td>Daniel</td>
+                                <td>Guspan</td>
+                                <td>vedúci kancelárie predsedu</td>
+                                <td>1.2.2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <form class="p-3 bg1 bg-primary mt-3">
+                    <div class="input-group mb-3 form-inline">
+                        <label class="bg-light p-1 rounded mr-2" for="basic-url">DBS URL: </label>
+                        <div class="input-group-prepend">
+                            <!-- aby sa oba label aj input spojili v jedno-->
+                            <span class="input-group-text rounded">www.google.com</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url">
+                    </div>
+                    <div class="input-group mb-3 form-inline">
+                        <label class="bg-light p-1 rounded mr-2" for="basic-url">DBS USER: </label>
+                        <div class="input-group-prepend">
+                            <!-- aby sa oba label aj input spojili v jedno-->
+                            <span class="input-group-text rounded">test</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url">
+                    </div>
+                    <div class="input-group mb-3 form-inline">
+                        <label class="bg-light p-1 rounded mr-2" for="basic-url">DBS PASSWORD: </label>
+                        <div class="input-group-prepend">
+                            <!-- aby sa oba label aj input spojili v jedno-->
+                            <span class="input-group-text rounded">test</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url">
+                    </div>
+                </form>
+                <div class="d-flex justify-content-end mt-3">
+                    <button id="cancel" type="button" class="btn btn-danger mr-2 mb-3 ">CANCEL</button>
+                    <button id="edit2" type="button" class="btn btn-primary mr-2 mb-3 ">EDIT</button>
+                    <button id="set" type="button" class="btn btn-success mr-2 mb-3 ">SET</button>
+                </div>
+            </div>
+            <script src="https://kit.fontawesome.com/3c2a326a9d.js"></script>
+</body>
+
+</html>
